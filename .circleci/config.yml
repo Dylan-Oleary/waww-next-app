@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14.16.1
+    steps:
+      - checkout
+      - run:
+          name: Build & Push Docker Image
+          command: |
+            echo 'Test Run'
