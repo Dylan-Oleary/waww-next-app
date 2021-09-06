@@ -21,4 +21,4 @@ jobs:
       - run:
           name: Deploy To Digital Ocean
           command: |
-            ssh -o StrictHostKeyChecking=no root@138.197.159.47 "/bin/bash ../opt/waww/startFrontEnd.sh dylanolearydev/$IMAGE_NAME:$TAG"
+            ssh -o StrictHostKeyChecking=no root@$DO_HOST "/bin/bash ../opt/waww/startFrontEnd.sh dylanolearydev/$IMAGE_NAME:$TAG"
